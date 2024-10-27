@@ -1,0 +1,11 @@
+export { default as Categories } from "./categories";
+export { default as Customer } from "./customers";
+export { default as Home } from "./home";
+export { default as Layout } from "./layout";
+export { default as Login } from "./login";
+export { default as Products } from "./products";
+export { default as Reports } from "./reports";
+export { default as Riders } from "./riders";
+export { default as Settings } from "./settings";
+export { default as Variants } from "./variants";
+export { default as Vendors } from "./vendors";
