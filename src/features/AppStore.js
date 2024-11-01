@@ -3,10 +3,6 @@ import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import { AuthReducer } from "./AuthSlice";
 
-const reducers = combineReducers({
-  auth: AuthReducer,
-});
-
 const persistConfig = {
   key: "root",
   storage,
@@ -14,6 +10,10 @@ const persistConfig = {
   timeout: 0,
   version: 1,
 };
+
+const reducers = combineReducers({
+  auth: AuthReducer,
+});
 
 const persistedReducer = persistReducer(persistConfig, reducers);
 

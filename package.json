@@ -5,11 +5,12 @@
   "type": "module",
   "homepage": "https://MadhavNimavat.github.io/ishani-grocery/",
   "scripts": {
+    "prebuild": "rimraf dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy" : "npm run build",
+    "preDeploy" : "npm run build",
     "deploy" : "gh-pages -d dist"
   },
   "dependencies": {
